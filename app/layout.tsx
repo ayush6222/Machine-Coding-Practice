@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 const tasks = [
   { name: "Home", link: "/" },
   { name: "Stopwatch", link: "/stopwatch" },
-  { name: "Pagination Task", link: "/pagination_task" },
+  { name: "Fetch API", link: "/fetch_api" },
 ];
 
 export default function RootLayout({

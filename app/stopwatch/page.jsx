@@ -2,6 +2,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Button from "../components/button"
 
 export default function Stopwatch() {
     const [time, setTime] = useState(0);
@@ -40,20 +41,15 @@ export default function Stopwatch() {
             <p>Stopwatch Implementation</p>
             <h1>
                 {
-                    `${hours} : ${minutes} : ${seconds}`
+                    `${String(hours).padStart(2, "0")} : ${String(minutes).padStart(2, "0")} : ${String(seconds).padStart(2, "0")}`
                 }
             </h1>
             <p>Started : {isRunning ? "ON" : "OFF"}</p>
             <button style={{ margin: "20px" }} onClick={() => startClickHandler()}>Start</button>
             <button style={{ margin: "20px" }} onClick={() => stopClickHandler()}>Stop</button>
             <button style={{ margin: "20px" }} onClick={() => resetClickHandler()}> Reset</button>
-           <button
-  onClick={() => {
-    window.open("https://github.com/ayush6222/Machine-Coding-Practice/blob/main/app/stopwatch/page.jsx", "_blank");
-  }}
->
-  Open GitHub Repo
-</button>
+
+            <Button url="https://github.com/ayush6222/Machine-Coding-Practice/blob/main/app/stopwatch/page.jsx"/>
 
         </div>
     )
