@@ -1,9 +1,8 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
-    <p>Ayush</p>
+      <h2>Welcome </h2>
+      <p>Select a task from the dropdown.</p>
     </div>
   );
 }
