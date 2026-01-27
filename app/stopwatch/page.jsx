@@ -49,7 +49,7 @@ export default function Stopwatch() {
             <button style={{ margin: "20px" }} onClick={() => resetClickHandler()}> Reset</button>
            <button
   onClick={() => {
-    window.open("https://github.com/ayush6222/main", "_blank");
+    window.open("https://github.com/ayush6222/Machine-Coding-Practice/blob/main/app/stopwatch/page.jsx", "_blank");
   }}
 >
   Open GitHub Repo
