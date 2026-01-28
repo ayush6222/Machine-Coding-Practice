@@ -52,6 +52,7 @@ export default function Debounce() {
         <>
             <h1>Debounce</h1>
             <Button url="https://github.com/ayush6222/Machine-Coding-Practice/blob/main/app/debounce/page.jsx" />
+            <br/>
             <input type="text" onChange={(e) => setSearch(e.target.value)} />
             {loading && <h2>Loading...</h2>}
             {
