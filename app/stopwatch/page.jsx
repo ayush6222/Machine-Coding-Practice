@@ -13,7 +13,7 @@ export default function Stopwatch() {
         if (isRunning) {
             interval = setInterval(() => {
                 setTime(prev => prev + 1)
-            }, 1)
+            }, 1000)
         }
 
 

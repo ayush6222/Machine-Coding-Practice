@@ -25,7 +25,7 @@ export default function Debounce() {
 
             )
             setFilteredData(data)
-        }, 500)
+        }, 1500)
 
         return (() => clearTimeout(timer))
 
