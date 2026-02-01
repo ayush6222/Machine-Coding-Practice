@@ -6,7 +6,8 @@ const tasks = [
   { name: "Home", link: "/" },
   { name: "Stopwatch", link: "/stopwatch" },
   { name: "Fetch API", link: "/fetch_api" },
-  { name: "Debounce", link: "/debounce" }
+  { name: "Debounce", link: "/debounce" },
+  { name: "Throttle", link: "/throttle" }
 ];
 
 export default function RootLayout({
