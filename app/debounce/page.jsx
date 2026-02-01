@@ -65,7 +65,7 @@ export default function Debounce() {
                         {filteredData.map((userData) => {
                             return (
 
-                                <tr>
+                                <tr key = {userData.id}>
                                     <td>{`${userData.firstName} ${userData.lastName}`}</td>
                                     <td>{userData.age}</td>
                                 </tr>

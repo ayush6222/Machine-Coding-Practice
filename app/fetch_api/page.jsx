@@ -40,7 +40,7 @@ export default function FetchAPI(){
             { list.length>0 && !loading && 
                 list.map((userData)=> {
                     return (
-                       <tr>
+                       <tr key={userData.id}>
                         <td>{`${userData.firstName} ${userData.lastName}`}</td>
                         <td>{`${userData.age}, ${userData.gender}`}</td>
                         <td>{userData.email}</td>

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import Button from "../components/button";
-
+import "./styles.css"
 export default function Throttle() {
     const [list, setList] = useState([]);
     const [filteredList, setFilterList] = useState([]);
@@ -54,7 +54,9 @@ export default function Throttle() {
     return (
         <>
             <h1>Throttle</h1>
+            <br/>
             <Button url="https://github.com/ayush6222/Machine-Coding-Practice/blob/main/app/throttle/page.jsx" />
+            <br/>
             <input
                 type="text"
                 placeholder="Search user"
